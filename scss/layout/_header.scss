@@ -1,0 +1,52 @@
+header {
+	overflow: hidden;
+	padding-top: 2px;
+}
+
+#headerList {
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+}
+
+.logo {
+	font-size: 18px;
+	float: left;
+	margin-right: auto;
+	margin-left: 15px;
+	
+	@media #{$brk-tablet}{
+		font-size: 24px;
+	}
+}
+
+#notificationBell {
+	width: 30px;
+	margin-right: 15px;
+}
+
+
+.userPhoto {
+	border-left: 1px solid #bbb;
+	padding-left: 15px;
+	padding-right:15px;
+}
+
+.userPhoto img {
+	border-radius: 50%;
+	width: 30px;
+}
+
+
+.userName {
+	padding-right: 10px;
+	display: none;
+	
+	@media #{$brk-tablet}{
+		display: initial;
+	}
+}
+
+.headerList :not(:first-child) {
+	margin-right: 10px;
+}

@@ -1,0 +1,34 @@
+#alert,
+.noAlerts {
+	border-radius: 15px;
+	margin: 10px 0;
+	padding: 10px;
+	overflow: hidden;
+	font-size: .85em;
+	
+	@media #{$brk-tablet}{
+		font-size: initial;
+	}
+}
+
+#alert button {
+	text-decoration: none;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	float: right;
+	vertical-align: middle;
+	padding: 0;
+	margin-right: 5px;
+}
+
+#alert span,
+.noAlerts span {
+	max-width: 90%;
+	float: left;
+}
+
+.noAlerts {
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}

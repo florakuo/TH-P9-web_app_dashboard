@@ -1,0 +1,64 @@
+// Traffic
+
+#traffic {
+    height:20%;
+	@extend %brdr-btm;
+}
+
+
+.traffic_list li:first-of-type{
+	float: left;
+	margin-right: auto;
+}
+
+.traffic_list li:not(:first-child) {
+	background: $color-prim;
+	border-radius: 5px;
+	color: white;
+	float: right;
+	margin-left: 5px;
+	font-size: .7em;
+	font-weight: bold;
+
+	
+	@media #{$brk-tablet} {
+		font-size: .8em;
+		letter-spacing: .8px;
+	}
+}
+
+.traffic_list a {
+	display: inline-block;	
+	padding: 5px;
+}
+
+.selected {
+	background-color: $accent !important;
+}
+
+//Daily Traffic
+
+.secCharts {
+	@media #{$brk-tablet} {
+		
+	}
+}
+
+#dailyTraffic {
+	@extend %brdr-btm;
+	
+	@media #{$brk-tablet} {
+		border-bottom: none;
+		border-right: 1px solid #ddd;
+	}
+}
+
+//Mobile Users
+#mobileUsers {
+
+	@media #{$brk-tablet} {
+		padding-left:30px;
+	}
+	
+}
+

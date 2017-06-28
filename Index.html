@@ -1,0 +1,334 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+<!-- Header -->
+<header>
+    <ul id="headerList">
+        <li class="logo">
+        <strong>Your</strong>App™
+        </li>
+            
+        <li id="notificationBell">
+            <a href="#">
+                <img id="bell" src="icons/icon-bell.svg">
+                <div id="bellDot"></div>
+            </a>
+        </li>        
+        
+        <li class="userPhoto">
+            <img src="img/userPhoto.png" alt="profile picture">
+        </li>
+
+        <li class="userName">Josh Sullivan</li>       
+    </ul>
+
+    <!-- Notifications -->
+
+    <div id="bellAllert" class="notificationAlert">
+    
+        <div class="notification-content">
+                    
+            <span class="close">&times;</span>
+                    
+                <ul class="notification-list">
+                        
+                    <li class="notification-header">Notifications</li>
+                            
+                    <li><a href="#">Project Update: Yo comments on your project</a></li>
+                    <li><a href="#">Don't forget to hand in Project.</a></li>
+                    <li><a href="#">Finish the project before deadline.</a></li>
+                </ul>
+                  
+        </div>
+                  
+    </div>
+            
+    <!-- End Notification -->
+
+</header>
+
+    <!-- Navigation -->
+        <nav>
+            <ul class="nav_list">
+                <li><a href="index.html"><img src="icons/icon-dashboard.svg" title="Dashboard" alt="Dashboard"></a></li>
+                <li><a href="#" class="nav-links"><img src="icons/icon-members.svg" title="Members" alt="Members"></a></li>
+                <li><a href="#" class="nav-links"><img src="icons/icon-visits.svg" title="Visits" alt="Visits page"></a></li>
+                <li><a href="#" class="nav-links"><img src="icons/icon-settings.svg" title="Settings" alt="Settings"></a></li>
+            </ul>
+        </nav>
+
+    <!-- MainContent-->
+    <main class="clearfix">
+
+        <!-- Subheader-->
+        <div class="subheader">
+            <ul class="subheader_List">
+                <li class="tabName"><h2>Dashboard</h2></li>
+                <li class="search_board">
+                    <img src="icons/magnifying-glass.svg" class="magGlass" alt="Icon of Magnifying Glass">                    
+                    <input type="text" placeholder="search">
+                </li>
+            </ul>    
+        </div>
+
+
+    <div id="mainWrap">
+
+        <!-- Alert -->    
+        <div id="alert">
+            
+            <span>
+                <strong>Alert!</strong> There is a strong possibility you will ignore this!
+            </span>
+            
+            <button id="alertClose"><strong>X</strong></button>
+            
+        </div>
+
+
+        <!-- Chart -->
+        <div id="traffic">
+            <ul class="traffic_list clearfix">
+                <li><h2>Traffic</h2></li>
+                <li id="traffic-btn-hourly"><a href="#">Hourly</a></li>
+                <li id="traffic-btn-daily"><a href="#">Daily</a></li>
+                <li id="traffic-btn-weekly" class="selected"><a href="#">Weekly</a></li>
+                <li id="traffic-btn-monthly"><a href="#">Monthly</a></li>
+            </ul>
+                <canvas id="trafficChart" width="600px" height="250px"></canvas>
+        </div>
+
+        <div class="col-2 secChart">
+            <div id="dailyTraffic">
+                <h3>Daily Traffic</h3>
+                <canvas id="dailyTrafficChart" width="600px" height="200px"></canvas>
+            </div>
+
+            <div id="mobileUsers">
+                <h3>Mobile Users</h3>
+                <canvas id="mobileUsersChart" width="600px" height="200px"></canvas>
+            </div>
+        </div>
+
+        <!--Social stats-->
+
+        <div id="social_main">
+            <h3>Social Stats</h3>
+        
+            <div class="social_box">
+                <img src="icons/icon-twitter.svg" alt="twittericon" class="social-icon">
+                <div class="social_state">
+                    <h3 class="social_media">Twitter</h3>
+                    <p class="social_number">10,345</p>
+                </div>
+            </div>
+        
+            <div class="social_box">
+                <img src="icons/icon-facebook.svg" alt="facebookicon" class="social-icon">
+                <div class="social_state">
+                    <h3 class="social_media">Facebook</h3>
+                    <p class="social_number">8,739</p>
+                </div>
+            </div>
+                
+            <div class="social_box">
+                <img src="icons/icon-google-plus.svg" alt="googleicon" class="social-icon">
+                <div class="social_state">
+                    <h3 class="social_media">Google+</h3>
+                    <p class="social_number">2,530</p>
+                </div>
+            </div> 
+
+        </div>
+
+
+        <!-- New Members-->
+        <div class="col-2 col-2-btm">
+            <div id="newMembers">
+                <h2>New Members</h2>
+
+                <div class="member_item">
+                    <img src="img/userPhoto.png">
+                        <div class="memberinfo">
+                            <span class="member_title">Victoria Chambers</span>
+                            <a class="mamber_subtitle" href="Victoria.Chambers@example.com">Victoria.Chambers@example.com</a>
+                        </div>    
+                    <span class="member_date">10/15/15</span>
+                </div>
+        
+                <div class="member_item">
+                    <img src="img/userPhoto.png">
+                        <div class="memberinfo">
+                            <span class="member_title">Dale Byrd</span>
+                            <a class="mamber_subtitle" href="Dale.Byrd@example.com" >Dale.Byrd@example.com</a>
+                        </div>    
+                    <span class="member_date">10/15/15</span>
+                </div>
+        
+                <div class="member_item">
+                    <img src="img/userPhoto.png">
+                        <div class="memberinfo">
+                            <span class="member_title">Dawn Wood</span>
+                            <a class="mamber_subtitle" href="Dawn.Wood@example.com">Dawn.Wood@example.com</a>
+                        </div>    
+                    <span class="member_date">10/15/15</span>
+                </div>
+
+                <div class="member_item">
+                    <img src="img/userPhoto.png">
+                        <div class="memberinfo">
+                            <span class="member_title">Dan Oliver</span>
+                            <a class="mamber_subtitle" href="Dan.Oliver@example.com">Dan.Oliver@example.com</a>
+                        </div>    
+                    <span class="member_date">10/15/15</span>
+                </div>
+            </div><!--New member-->
+
+
+        <!--Recent Activity-->
+            <div id="recentActivity">
+                <h2>Recent Activity</h2>
+        
+                <div class="member_item">
+                    <img src="img/userPhoto.png">
+                        <div class="member_activity">
+                            <span class="member_title">Victoria Chambers commented on YourAPPS seo tips </span>
+                            <span class="member_subtitle">4 hours ago</span>
+                        </div>
+                    <img class="rightArrow" src="icons/icon-arrowRight.svg" alt="">    
+                </div>
+
+                <div class="member_item">
+                    <img src="img/userPhoto.png">
+                        <div class="member_activity">        
+                            <span class="member_title">Dale.Byrd like the post Facebook change for 2016 </span>
+                            <span class="member_subtitle">5 hours ago</span>
+                        </div>
+                    <img class="rightArrow" src="icons/icon-arrowRight.svg" alt="">    
+                </div>
+
+                <div class="member_item">
+                    <img src="img/userPhoto.png">
+                        <div class="member_activity">        
+                            <span class="member_title">Dawn.Wood commented on Facebook's change for 2016</span>
+                            <span class="member_subtitle">5 hours ago</span>
+                        </div>
+                    <img class="rightArrow" src="icons/icon-arrowRight.svg" alt="">           
+                </div>
+        
+                <div class="member_item">
+                    <img src="img/userPhoto.png">
+                        <div class="member_activity">        
+                            <span class="member_title">Dan.Oliver post your App seo tips</span>
+                            <span class="member_subtitle">1 day ago</span>
+                        </div>
+                    <img class="rightArrow" src="icons/icon-arrowRight.svg" alt="">           
+                </div>
+            </div><!--Recent activity-->
+        </div>        
+
+
+
+        <!--Message User & Setting-->
+        <div class="col-2">
+            <div id="messageUser">
+
+                <form id="messageForm">
+                    <h2>Message User</h2>
+                    
+                    <input type="text" placeholder="Search for User" name="user_search" id="user_search">
+                    <textarea placeholder="Message for User" name="user_message" id="user_message"></textarea>
+
+                    <button type="submit" id="messageSubmit">SEND</button>
+                </form>   
+            </div>
+        
+
+
+            <div id="settings">
+
+                <form id="settingsForm">
+                    <h3>Settings</h3>
+
+                    <div class="toggle">
+                        <p>Send Email Notifications</p>
+                        <label class="switch">
+                            <input type="checkbox" name="settings" id="emailNotifications" value="settings">
+                            <span class="slider round"></span>
+
+                        </label>
+                    </div>
+                    
+                    <div class="toggle">    
+                        <p>Set Profile to Public</p>
+                        <label class="switch">
+                            <input type="checkbox" name="settings" id="publicProfile" value="settings">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>    
+                
+
+                    <div class="select_Timezone">
+                        <select name="timezone" id="timezone">
+                            <option value="" disabled="" selected="">Select Timezone</option>
+                              <option value="-12.0">(GMT -12:00) Eniwetok, Kwajalein</option>
+                              <option value="-11.0">(GMT -11:00) Midway Island, Samoa</option>
+                              <option value="-10.0">(GMT -10:00) Hawaii</option>
+                              <option value="-9.0">(GMT -9:00) Alaska</option>
+                              <option value="-8.0">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+                              <option value="-7.0">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+                              <option value="-6.0">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+                              <option value="-5.0">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+                              <option value="-4.0">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+                              <option value="-3.5">(GMT -3:30) Newfoundland</option>
+                              <option value="-3.0">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+                              <option value="-2.0">(GMT -2:00) Mid-Atlantic</option>
+                              <option value="-1.0">(GMT -1:00 hour) Azores, Cape Verde Islands</option>
+                              <option value="0.0">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+                              <option value="1.0">(GMT +1:00 hour) Brussels, Copenhagen, Madrid, Paris</option>
+                              <option value="2.0">(GMT +2:00) Kaliningrad, South Africa</option>
+                              <option value="3.0">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                              <option value="3.5">(GMT +3:30) Tehran</option>
+                              <option value="4.0">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+                              <option value="4.5">(GMT +4:30) Kabul</option>
+                              <option value="5.0">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                              <option value="5.5">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+                              <option value="5.75">(GMT +5:45) Kathmandu</option>
+                              <option value="6.0">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+                              <option value="7.0">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+                              <option value="8.0">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+                              <option value="9.0">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                              <option value="9.5">(GMT +9:30) Adelaide, Darwin</option>
+                              <option value="10.0">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+                              <option value="11.0">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+                              <option value="12.0">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+
+                        </select>
+                            <img class="downArrow" src="icons/icon-arrowDown.svg" alt="">
+                    </div>
+        
+                    <button type="submit" id="settingsSave">Save</button>
+                    <button type="submit" id="settingsCancel">Cancle</button>
+
+                </form>
+            </div>
+        </div> <!--message & setting-->   
+        
+        </div>
+    </main>
+
+<!-- JS -->    
+        <script src="js/awesomplete.min.js" type="text/javascript"></script>    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+        
+    </body>
+</html>

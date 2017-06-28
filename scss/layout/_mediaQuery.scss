@@ -1,0 +1,16 @@
+@media #{$brk-tablet} {
+
+	.col-2-btm {
+		border-bottom: 1px solid #ddd;
+	}
+	
+	.col-2 > div{
+		width: 49%;
+		display: inline-block;
+	}
+	
+	.secChart {
+		padding-top: 25px;	
+	}
+	
+}

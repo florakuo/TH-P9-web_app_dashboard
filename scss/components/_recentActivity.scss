@@ -1,0 +1,65 @@
+#newMembers {
+	@extend %brdr-btm;
+	
+	@media #{$brk-tablet} {
+		border-right: 1px solid #ddd;
+		border-bottom: none;
+	}
+}
+
+#recentActivity {
+	@extend %brdr-btm;
+	@media #{$brk-tablet} {
+		border-bottom: none;
+	}
+}
+
+#newMembers img,
+#recentActivity img {
+	@extend %roundy;
+	width: 30px;
+	margin-right: 5px;
+}
+
+.member_item {
+	font-size: .9em;
+	padding: 15px 0;
+}
+
+.member_item:not(:last-child) {
+	border-bottom: 1px solid #eee;
+}
+
+#newMembers a {
+	color: #415677;
+	text-decoration: none;
+	top: 0;
+}
+
+.member_date {
+	padding-top: 10px;
+	float: right;	
+}
+
+.member_title,
+.mamber_subtitle {
+	display: block;
+	font-size: .85em;
+}
+
+.memberinfo,
+.member_activity {
+	display: inline;
+	position: absolute;
+	width: 75%;
+	@media #{$brk-tablet} {
+		width: 25.95%;
+	}
+}
+
+
+.rightArrow {
+	display: block;
+	float: right;
+	margin-right: -5px !important;
+}

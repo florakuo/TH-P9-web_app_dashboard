@@ -1,0 +1,66 @@
+*{
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: $color-sec;
+}
+
+header,
+#alert,
+button {
+	background-color: $color-prim;
+	color: white;
+}
+
+input, textarea, select {
+	color: #777;
+}
+
+h2 {
+	padding-left: 0 !important;
+	font-size: 14px;
+	text-transform: uppercase;
+	
+	@media #{$brk-tablet}{
+		font-size: 18px;
+	}
+}
+
+h2,
+h3 {
+	color: $color-typo;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+li {
+	list-style-type: none;
+}
+
+select {
+   -webkit-appearance: none; 
+   -moz-appearance: none;
+   background-image: url(...);   /* add custom arrow */
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

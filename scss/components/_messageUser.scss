@@ -1,0 +1,30 @@
+#messageUser {
+	padding: 0 10px 15px;
+	border-bottom: 1px solid #ddd;
+		
+	@media #{$brk-tablet} {
+		border-bottom: none;
+		border-right: 1px solid #ddd;
+	}
+}
+
+#messageUser input,
+#messageUser textarea {
+	padding: 5px;
+	border: 1px solid #bbb;
+	width: 100%;
+	margin: 10px 0;
+	border-radius: 5px;
+}
+
+#messageUser textarea {
+	height: 5.75rem;
+}
+
+#messageUser button {
+	width: 100%;
+	border: none;
+	padding: 15px;
+	border-radius: 5px;
+	font-weight: bold;
+}
